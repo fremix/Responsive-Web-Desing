@@ -1,0 +1,31 @@
+/* Mobile First | Los que esta por fuera de los media queris es lo que aplica a dispositivos mobiles
+y lo que esta en los media queris es lo que aplica a desktop, se usa min-width ej. de 600px a un tamaña mayor
+ */
+
+.oferta {
+    background-color: #00446e;
+    padding: 2rem;
+    text-align: center;
+}
+
+.precio {
+    font-size: 4rem;
+    margin: 0;
+}
+
+
+@media (min-width: 600px) { /* Cuando se trabaja con mobile first, siempre se utiliza min-width */
+    .oferta {
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+    .precio {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .oferta {
+        max-width: 60rem;
+    }
+}

@@ -1,0 +1,25 @@
+/* Desktop First | Lo que este por fuera de los media queris en desktop first
+aplica al tamaño de escritorio, y en los medias queris va el codigo que aplica para
+dispositivos moviles max-width, ej. max-width: 600px va de cero a los 600px este es el codigo para moviles*/
+
+.oferta {
+    background-color: #00446e;
+    padding: 2rem;
+    text-align: center;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.precio {
+    font-size: 4rem;
+    margin: 0;
+}
+
+@media (max-width: 600px) { /* En desktop first se utilizar max-width y en mobile first se usa min-width 
+                            los medias queris se deben colocar de los mas grandes al mas pequeño */
+    .oferta {
+        max-width: 100%;
+    }
+}
+
+/* video 107 */
