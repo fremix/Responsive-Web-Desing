@@ -1,0 +1,26 @@
+/* Contenedores Responsive */
+
+.contenedor-responsive {
+    background-color: #fff;
+    /*width: 90%;
+    max-width: 1000px;*/
+    width: min(90%, 1000px); /* Es otra forma de hacer un contenedor responsive */
+    height: 400px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
