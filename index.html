@@ -90,15 +90,67 @@
         <p>fredddy </p>
 
         <h2>Formatos Modernos</h2>
-        <picture>
-            <source srcset="img/imagen.avif" type="image/avif" />
-            <source srcset="img/imagen.webp" type="image/webp" />
-            <img src="img/imagen.jpg" alt="imagen" >
+       
+        <!-- <picture>
+            <source srcset=".avif" type="image/avif">
+            <source srcset=".webp" type="image/webp">
+            <img loading="lazy" src=".jpg" width="500" height="300" alt="">
+        </picture> -->
+
+        <h2>Formatos Modernos con SRC SET</h2>
+
+        <!-- <picture>
+            <source
+                sizes="1920w, 1280w, 640w"
+                srcset="img/imagen.avif 1920w,
+                        img/imagen-1000.avif 1280w,
+                        img/imagen-700.avif 640w"
+                type="image/avif"   
+            >
+            <source
+                sizes="1920w, 1280w, 640w"
+                srcset="img/imagen.webp 1920w,
+                        img/imagen-1000.webp 1280w,
+                        img/imagen-700.webp 640w"
+                type="image/webp"   
+            >
+            <source
+                sizes="1920w, 1280w, 640w"
+                srcset="img/imagen.jpg 1920w,
+                        img/imagen-1000.jpg 1280w,
+                        img/imagen-700.jpg 640w"
+                type="image/jpeg"   
+            >
+            <img loading="lazy" src="img/imagen.jpg" alt="imagen"> -->
+            <picture>
+            <source
+                 sizes="1920w, 1280w, 640w" 
+                 srcset="img/imagen.avif 1920w, 
+                         img/imagen-1280.avif 1280w, 
+                         img/imagen-640.avif 640w" 
+                 type="image/avif">
+            <source
+                 sizes="1920w, 1280w, 640w" 
+                 srcset="img/imagen.webp 1920w, 
+                         img/imagen-1280.webp 1280w, 
+                         img/imagen-640.webp 640w" 
+                 type="image/webp">
+            <source
+                 sizes="1920w, 1280w, 640w" 
+                 srcset="img/imagen.jpg 1920w, 
+                         img/imagen-1280.jpg 1280w, 
+                         img/imagen-640.jpg 640w" 
+                 type="image/jpeg">
+            <img loading="lazy" decoding="async" src="img/imagen.jpg" lazyalt="imagen" width="500" height="300">
+            </picture>
+
+
+
 
 
         </picture>
-
-        <h2>Formatos Modernos con SRC SET</h2>
+        
+        
 
     </div>
 
